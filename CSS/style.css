@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+    /* Global */
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+
+
+p {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size:  35px;
+    color: rgb(79, 19, 89);
+    width: 100; /* Optionally, set a width to ensure it takes the full width of the container */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.image{
+    padding:15px;
+    background:#af7d4f;
+    margin-top:10px;
+    margin-bottom:10px;
+    outline:2px solid rgb(7, 7, 7);
+    vertical-align:bottom;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+li{
+    font-size: 20px;
+    vertical-align: baseline;
+}
+
+body{
+    background-color: rgba(190, 191, 129, 0.904);
+}
+
+.copy{
+    padding:15px;
+    background:#af7d4f;
+    margin-top:10px;
+    margin-bottom:10px;
+    outline:2px solid rgb(7, 7, 7);
+    vertical-align:bottom;
+}
