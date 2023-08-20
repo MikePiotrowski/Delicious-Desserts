@@ -1,117 +1,103 @@
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
+/* Update the color scheme */
+body {
+    background-color: #f0a55af7;
 }
 
-body{
-    font: 15px/1.5 Arial, Helvetica,sans-serif;
-    padding:0;
-    margin:0;
-    background-color:#f4f4f4;
-      
-  }
+header {
+    background: #874c30;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
 
+/* Increase spacing between list items and headers */
+header li {
+    padding: 0 15px;
+}
 
-    /* Global */
-.container{
-    width:80%;
-    margin:auto;
-    overflow:hidden;
-  }
-
-  ul{
-    margin:0;
-    padding:0;
-  }
-
-  /* Header **/
-header{
-    background:#624123;
-    color:#ffffff;
-    padding-top:30px;
-    min-height:70px;
-    border-bottom:#e8491d 3px solid;
-  }
-  
-  header a{
-    color:#ffffff;
-    text-decoration:none;
-    text-transform: uppercase;
-    font-size:16px;
-  }
-  
-  header li{
-    float:left;
-    display:inline;
-    padding: 0 20px 0 20px;
-  }
-  
-  header #branding{
-    float:left;
-  }
-  
-  header #branding h1{
-    margin:0;
-  }
-  
-  header nav{
-    float:right;
-    margin-top:10px;
-  }
-  
-  header .highlight, header .current a{
-    color:#dd5c18;
-    font-weight:bold;
-  }
-  
-  header a:hover{
-    color:#cccccc;
-    font-weight:bold;
-  }
-
-
+/* Enhance typography and add spacing for readability */
 p {
-    text-align: center;
-    font-family: 'Times New Roman';
-    font-weight: bold;
-    font-size:  35px;
-    color: rgb(79, 19, 89);
-    width: 100; /* Optionally, set a width to ensure it takes the full width of the container */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-align: center;
+    font-family: 'Times New Roman', sans-serif;
+  font-weight: bold;
+  font-size:  40px;
+  color: rgb(79, 19, 89);
+  width: 100%; /* Optionally, set a width to ensure it takes the full width of the container */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
-.image{
-    padding:15px;
-    background:#af7d4f;
-    margin-top:10px;
-    margin-bottom:10px;
-    outline:2px solid rgb(7, 7, 7);
-    vertical-align:bottom;
-    border-bottom:#e8491d 3px solid;
+/* Add box shadow to images and adjust padding */
+.image {
+    padding: 20px;
+    background: #d9a979;
+    margin: 15px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-ul{
+/* Adjust border style for the "copy" section */
+.copy {
+    padding: 15px;
+    background: #d9a979;
+    margin: 15px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #e8491d;
+    border-bottom: 3px solid #e8491d;
+}
+
+/* Header **/
+header{
+  background:#624123;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
   margin:0;
-  padding:0;
 }
 
-li{
-    font-size: 20px;
-    vertical-align: baseline;
+header nav{
+  float:right;
+  margin-top:10px;
 }
 
-body{
-    background-color: rgba(190, 191, 129, 0.904);
+header .highlight, header .current a{
+  color:#dd5c18;
+  font-weight:bold;
 }
 
-.copy{
-    padding:15px;
-    background:#af7d4f;
-    margin-top:10px;
-    margin-bottom:10px;
-    outline:2px solid rgb(7, 7, 7);
-    vertical-align:bottom;
-    border-top:#e8491d;
-    border-bottom:#e8491d 3px solid;
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+
+/* Adjust font size for list items */
+li {
+    font-size: 24px;
+}
+
+/* Update container width and add margin */
+.container {
+    width: 90%;
+    margin: 20px auto;
 }
