@@ -114,6 +114,16 @@ li {
     font-size: 24px;
 }
 
+p{
+  text-align: center;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: bold;
+  font-size:  40px;
+  color: rgb(79, 19, 89);
+  width: 100%; /* Optionally, set a width to ensure it takes the full width of the container */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
 /* Update container width and add margin */
 .container {
     width: 90%;
