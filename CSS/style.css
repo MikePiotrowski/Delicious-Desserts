@@ -16,8 +16,23 @@ header li {
     padding: 0 15px;
 }
 
+.logo {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #e8491d;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  border: 2px solid #e8491d;
+  padding: 10px 20px;
+  background-color: #624123;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Enhance typography and add spacing for readability */
-p {
+.paragraph {
   text-align: center;
   font-family: 'Times New Roman', sans-serif;
   font-weight: bold;
