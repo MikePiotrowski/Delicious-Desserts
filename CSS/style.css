@@ -44,6 +44,9 @@ header li {
 
 /* Add box shadow to images and adjust padding */
 .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     background: #d9a979;
     margin: 15px 0;
