@@ -22,4 +22,4 @@ Thank you for joining me on this exciting odyssey. Together, we'll celebrate the
 
 Warmest regards,
 
-Michael Piotrowski
+Delicious Desserts
