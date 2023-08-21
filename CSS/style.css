@@ -63,6 +63,12 @@ header li {
     border-bottom: 3px solid #e8491d;
 }
 
+.trademark {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+
 /* Header **/
 header{
   background:#624123;
