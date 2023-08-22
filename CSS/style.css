@@ -157,7 +157,7 @@ h2{
 }
 
 .video-container {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 75vh; /* Adjust to your preferred height */
