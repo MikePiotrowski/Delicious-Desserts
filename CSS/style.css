@@ -3,12 +3,24 @@ body {
     background-color: #f0a55af7;
 }
 
+ol{
+  list-style: none;
+}
+
 header {
     background: #874c30;
     color: #fff;
     padding-top: 20px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
+}
+
+.highlight:hover {
+  color: #c7370a; /* Change this to the color you want */
+  transition: text-shadow 0.3s ease;
+  text-shadow: 0 0 5px rgba(253, 253, 253, 0.959);
+  order: 1px solid #c7370a; /* Adding a border */
+  padding: 2px; /* Adding padding for spacing */
 }
 
 /* Increase spacing between list items and headers */
@@ -55,6 +67,7 @@ header li {
 
 /* Adjust border style for the "copy" section */
 .copy {
+    font-family: 'Playfair Display', serif;
     padding: 15px;
     background: #d9a979;
     margin: 15px 0;
@@ -134,4 +147,11 @@ p{
 .container {
     width: 90%;
     margin: 20px auto;
+}
+
+h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 36x;
+  font-weight: bold;
+  margin-left: 4px;
 }
