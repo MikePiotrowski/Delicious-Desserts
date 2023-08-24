@@ -161,7 +161,7 @@ h2{
   justify-content: center;
   align-items: center;
   height: 50vh; /* Adjust to your preferred height */
-  background:#624123;
+  background: linear-gradient(to bottom, #ffecd2, #624123); 
   border: 2px solid #e84918;
   border-radius: 10px; /* Adds rounded corners to the border */
   overflow: hidden; /* Prevents iframe overflow from protruding outside the container */
