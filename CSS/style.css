@@ -160,8 +160,8 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh; Adjust to your preferred height
-  border: 2px; solid #e8491; /* Change the color code to your desired color */
+  height: 50vh; /* Adjust to your preferred height */
+  border: 2px solid #e84918;
   border-radius: 10px; /* Adds rounded corners to the border */
   overflow: hidden; /* Prevents iframe overflow from protruding outside the container */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
