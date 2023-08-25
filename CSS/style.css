@@ -43,6 +43,26 @@ header li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.excerpt{  
+
+  border: 2px solid #e84918; !important
+  
+  background-color:#d9a979; !important
+
+  border-radius: 10px; !important
+  
+  /* padding:5px;  
+  
+  margin-top:5px;  
+  
+  margin-bottom:5px;  
+  
+  margin-left:20px;  
+  
+  margin-right:20px;   */
+  
+  }
+
 /* Enhance typography and add spacing for readability */
 .paragraph {
   text-align: center;
@@ -172,3 +192,9 @@ h2{
 /*  width: 560; !* Make the iframe fill the container's width *!*/
 /*  height: 315; !* Make the iframe fill the container's height *!*/
 /*}*/
+
+
+
+  h1{
+    text-align: center;
+  }
