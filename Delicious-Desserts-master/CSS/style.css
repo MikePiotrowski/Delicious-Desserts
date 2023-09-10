@@ -15,17 +15,18 @@ header {
     border-bottom: #e8491d 3px solid;
 }
 
+.highlight:hover {
+  color: #c7370a; /* Change this to the color you want */
+  transition: text-shadow 0.3s ease;
+  text-shadow: 0 0 5px rgba(253, 253, 253, 0.959);
+  border: 1px solid #c7370a; /* Adding a border */
+  padding: 2px; /* Adding padding for spacing */
+}
+
 /* Increase spacing between list items and headers */
 header li {
     padding: 0 15px;
 }
-
-/* Style for the active link */
-.nav-link.active {
-  color: #c7370a; /* Change to the color you want */
-  font-weight: bold;
-}
-
 
 .logo {
   font-family: 'Arial', sans-serif;
@@ -80,8 +81,6 @@ header li {
     align-items: center;
     padding: 20px;
     background: #d9a979;
-    border: 2px solid #e84918;
-    border-radius: 10px; 
     margin: 15px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
