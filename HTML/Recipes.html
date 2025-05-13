@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delicious Desserts - Browse our collection of delightful dessert recipes">
+    <meta name="author" content="Michael Piotrowski">
+    <title>Recipes - Delicious Desserts</title>
+    <link rel="stylesheet" href="../CSS/enhanced-style.css">
+    <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../JS/newFile.js" defer></script>
+    <script src="../JS/site-enhancements.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                        <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                        <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="paragraph">Delicious Recipes</h1>
+
+        <section class="content-section">
+            <h2>Our Cookie Collection</h2>
+            <p>Explore our selection of delicious cookie recipes, perfect for any occasion. From classic favorites to unique creations, we have something for everyone!</p>
+
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <h3><a href="chocolatechip.html">Chocolate Chip Cookies</a></h3>
+                    <p>The classic cookie that everyone loves! Soft, chewy, and loaded with chocolate chips.</p>
+                </div>
+
+                <div class="recipe-card">
+                    <h3><a href="snickerdoodle.html">Grandma Ruth's Easy Snickerdoodle Cookies</a></h3>
+                    <p>A traditional cinnamon-sugar coated cookie with a soft, chewy texture and wonderful aroma.</p>
+                </div>
+
+                <div class="recipe-card">
+                    <h3><a href="sugarcookies.html">Homemade Sugar Cookies</a></h3>
+                    <p>Simple, sweet, and perfect for decorating. These sugar cookies are a blank canvas for your creativity!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Coming Soon</h2>
+            <p>We're constantly adding new recipes to our collection. Check back soon for more delicious treats!</p>
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <h3><a href="peanutbutter.html">Peanut Butter Cookies</a></h3>
+                    <p>Rich and nutty cookies with the perfect balance of sweet and salty flavors.</p>
+                    <a href="peanutbutter.html" class="recipe-link">View Preview</a>
+                </div>
+
+                <div class="recipe-card">
+                    <h3><a href="oatmealraisin.html">Oatmeal Raisin Cookies</a></h3>
+                    <p>Hearty cookies with chewy oats and sweet raisins, spiced to perfection.</p>
+                    <a href="oatmealraisin.html" class="recipe-link">View Preview</a>
+                </div>
+
+                <div class="recipe-card">
+                    <h3><a href="chocolatebrownies.html">Double Chocolate Brownies</a></h3>
+                    <p>Decadent, fudgy brownies loaded with two types of chocolate for the ultimate indulgence.</p>
+                    <a href="chocolatebrownies.html" class="recipe-link">View Preview</a>
+                </div>
+
+                <div class="recipe-card">
+                    <h3><a href="lemonbars.html">Lemon Bars</a></h3>
+                    <p>Bright and tangy lemon filling on a buttery shortbread crust, dusted with powdered sugar.</p>
+                    <a href="lemonbars.html" class="recipe-link">View Preview</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="social-text">Follow us on social media for more recipes and baking inspiration!</p>
+            <p class="copy">Delicious Desserts <span class="heart">♥</span> All Rights Reserved &copy; 2025</p>
+        </div>
+    </footer>
+
+    <style>
+        .recipe-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .recipe-card {
+            flex: 1;
+            min-width: 250px;
+            background-color: #d9a979;
+            border: 2px solid #e84918;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe-card h3 {
+            margin-top: 0;
+            border-bottom: 1px solid #e8491d;
+            padding-bottom: 10px;
+        }
+
+        .recipe-card a {
+            color: #624123;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .recipe-card a:hover {
+            color: #e8491d;
+        }
+
+        .recipe-card p {
+            font-size: 0.95rem;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</body>
+</html>
