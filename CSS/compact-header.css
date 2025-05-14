@@ -1,0 +1,187 @@
+/* compact-header.css - Reduces unused space in the top part of web pages */
+
+/* Make header more compact and organized */
+header {
+    padding: 10px 0; /* Reduced from 20px */
+    margin-bottom: 15px; /* Reduced from 30px */
+}
+
+/* Change header layout to a more structured grid */
+header .container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "left logo right"
+        "search search search";
+    align-items: center;
+    gap: 10px;
+    padding: 0; /* Remove padding to allow menus to be at the edges */
+}
+
+/* Center the logo in the middle column */
+header #branding {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style for the logo */
+.logo {
+    margin-bottom: 10px;
+    max-width: 200px; /* Reduced from 250px */
+    padding: 5px; /* Reduced from 10px */
+}
+
+.logo img {
+    max-height: 60px; /* Reduced from 80px */
+}
+
+/* Position navigation on the right */
+header nav {
+    grid-area: right;
+    margin-top: 0;
+    width: auto;
+    justify-self: end;
+    margin-right: 0; /* Removed margin to position all the way to the right */
+}
+
+/* Reduce spacing in navigation */
+header nav ul {
+    padding: 5px 10px; /* Reduced from 8px 15px */
+}
+
+/* Position search bar below the logo */
+.search-container {
+    grid-area: search;
+    margin: 5px auto 10px;
+    max-width: 400px;
+    width: 90%;
+    justify-self: center;
+}
+
+/* Quick links section on the left */
+.quick-links {
+    grid-area: left;
+    justify-self: start;
+    margin-left: 0; /* Removed margin to position all the way to the left */
+}
+
+.quick-links ul {
+    display: flex;
+    list-style: none;
+    padding: 8px 15px;
+    background-color: rgba(232, 73, 29, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quick-links li {
+    padding: 0 20px;
+}
+
+.quick-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #e8491d;
+}
+
+/* Apply the same highlight-hover styles to quick-links as in the main nav */
+.quick-links .highlight-hover {
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    white-space: nowrap;
+}
+
+.quick-links .highlight-hover:hover {
+    background-color: rgba(232, 73, 29, 0.3);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.quick-links .highlight-hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #e8491d;
+    transition: all 0.3s ease;
+}
+
+.quick-links .highlight-hover:hover::after {
+    width: 80%;
+    left: 10%;
+}
+
+/* Reduce spacing around page titles */
+h1 {
+    margin-top: 15px; /* Reduced from 30px */
+    margin-bottom: 15px; /* Reduced from default */
+}
+
+.paragraph {
+    margin: 15px 0; /* Reduced from 30px */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Switch to a simpler layout for mobile */
+    header .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "logo"
+            "left"
+            "right"
+            "search";
+        gap: 10px;
+    }
+
+    /* Center everything on mobile */
+    header #branding,
+    header nav,
+    .quick-links,
+    .search-container {
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+        margin-left: 0; /* Reset margins for mobile */
+        margin-right: 0;
+    }
+
+    /* Adjust logo for mobile */
+    .logo {
+        margin: 0 auto 10px;
+    }
+
+    /* Make navigation full width */
+    header nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Make quick links full width */
+    .quick-links ul {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /* Ensure search container is properly sized on mobile */
+    .search-container {
+        max-width: 90%;
+        margin: 5px auto;
+    }
+}
