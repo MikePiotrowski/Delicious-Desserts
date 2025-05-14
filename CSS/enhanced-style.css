@@ -159,6 +159,7 @@ header a:hover {
   border-radius: 4px;
   transition: all 0.3s ease;
   position: relative;
+  white-space: nowrap;
 }
 
 .highlight-hover:hover {
@@ -192,6 +193,7 @@ header a:hover {
   color: rgb(79, 19, 89);
   margin: 30px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 /* Content sections */

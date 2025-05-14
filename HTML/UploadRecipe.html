@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delicious Desserts - Upload Your Own Recipe">
+    <meta name="author" content="Michael Piotrowski">
+    <title>Upload Your Recipe - Delicious Desserts</title>
+    <link rel="stylesheet" href="../CSS/enhanced-style.css">
+    <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../JS/newFile.js" defer></script>
+    <script src="../JS/site-enhancements.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#cookies">Cookies</a></li>
+                    <li><a href="#brownies">Brownies</a></li>
+                    <li><a href="#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
+            <div id="branding">
+                <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About&nbsp;Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload&nbsp;Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="paragraph">Share Your Delicious&nbsp;Recipe</h1>
+
+        <section class="content-section">
+            <h2><i class="fas fa-info-circle"></i> How It Works</h2>
+            <p>We're excited to feature recipes from our community members! Use the form below to submit your favorite dessert recipe. Our team will review your submission and may feature it on our website.</p>
+            <p>Please follow the template provided to ensure your recipe is formatted correctly. Don't forget to include high-quality photos of your creation!</p>
+        </section>
+
+        <!-- Recipe Template Section -->
+        <section class="content-section">
+            <div class="recipe-card-header">
+                <h2><i class="fas fa-clipboard-list"></i> Recipe Template</h2>
+                <div class="recipe-card-icon"><i class="fas fa-file-alt"></i></div>
+            </div>
+            <p>Here's an example of how to format your recipe submission:</p>
+
+            <div class="recipe-info">
+                <div class="recipe-image">
+                    <img src="../Images/chocolate.jpg" alt="Example recipe image" width="300" height="300">
+                </div>
+
+                <div class="recipe-details">
+                    <div class="recipe-card">
+                        <div class="recipe-card-header">
+                            <h2>Ingredients</h2>
+                            <div class="recipe-card-icon"><i class="fas fa-utensils"></i></div>
+                        </div>
+                        <div class="recipe-card-body">
+                            <ul>
+                                <li>2 cups all-purpose flour</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>1/2 teaspoon salt</li>
+                                <li>1 cup (2 sticks) butter, softened</li>
+                                <li>3/4 cup granulated sugar</li>
+                                <li>3/4 cup packed brown sugar</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>2 large eggs</li>
+                                <li>2 cups chocolate chips</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-card-header">
+                    <h2>Directions</h2>
+                    <div class="recipe-card-icon"><i class="fas fa-list-ol"></i></div>
+                </div>
+                <div class="recipe-card-body">
+                    <div class="step">
+                        <h3>Step One</h3>
+                        <p>Preheat oven to 375°F.</p>
+                    </div>
+
+                    <div class="step">
+                        <h3>Step Two</h3>
+                        <p>Combine flour, baking soda and salt in small bowl. Beat butter, granulated sugar, brown sugar
+                        and vanilla extract in large mixer bowl until creamy. Add eggs, one at a time, beating well
+                        after each addition.</p>
+                    </div>
+
+                    <div class="step">
+                        <h3>Step Three</h3>
+                        <p>Gradually beat in flour mixture. Stir in chocolate chips. Drop by rounded tablespoon onto ungreased baking sheets.</p>
+                    </div>
+
+                    <div class="step">
+                        <h3>Step Four</h3>
+                        <p>Bake for 9 to 11 minutes or until golden brown. Cool on baking sheets for 2 minutes; remove to wire racks to cool completely.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-card-header">
+                    <h2>Tips</h2>
+                    <div class="recipe-card-icon"><i class="fas fa-lightbulb"></i></div>
+                </div>
+                <div class="recipe-card-body">
+                    <ul>
+                        <li>Make sure your butter is at room temperature for easy creaming</li>
+                        <li>Don't overmix the dough after adding the flour</li>
+                        <li>For chewier cookies, use more brown sugar than white sugar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Upload Form -->
+        <section class="content-section">
+            <div class="recipe-card-header">
+                <h2><i class="fas fa-upload"></i> Upload Your Recipe</h2>
+                <div class="recipe-card-icon"><i class="fas fa-paper-plane"></i></div>
+            </div>
+
+            <form class="recipe-upload-form">
+                <div class="form-group">
+                    <label for="recipe-name">Recipe Name:</label>
+                    <input type="text" id="recipe-name" name="recipe-name" required placeholder="e.g., Chocolate Chip Cookies">
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-description">Brief Description:</label>
+                    <textarea id="recipe-description" name="recipe-description" required placeholder="A short description of your recipe (2-3 sentences)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-ingredients">Ingredients:</label>
+                    <textarea id="recipe-ingredients" name="recipe-ingredients" required placeholder="List each ingredient on a new line with measurements"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-directions">Directions:</label>
+                    <textarea id="recipe-directions" name="recipe-directions" required placeholder="Provide step-by-step instructions for your recipe"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-tips">Tips (Optional):</label>
+                    <textarea id="recipe-tips" name="recipe-tips" placeholder="Share any helpful tips or tricks for making this recipe"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-image">Upload Image:</label>
+                    <input type="file" id="recipe-image" name="recipe-image" accept="image/*">
+                    <p class="form-note">Please upload a high-quality image of your finished dessert</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="author-name">Your Name:</label>
+                    <input type="text" id="author-name" name="author-name" required placeholder="Your name as you'd like it to appear">
+                </div>
+
+                <div class="form-group">
+                    <label for="author-email">Your Email:</label>
+                    <input type="email" id="author-email" name="author-email" required placeholder="Your email address (will not be published)">
+                </div>
+
+                <button type="submit" class="cta-button"><i class="fas fa-upload"></i> Submit Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="social-text">Follow us on social media for more recipes and baking inspiration!</p>
+            <p class="copy">Delicious Desserts <span class="heart">♥</span> All Rights Reserved &copy; 2025</p>
+        </div>
+    </footer>
+
+    <style>
+        /* Styles specific to the recipe upload page */
+        .recipe-upload-form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #624123;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d9a979;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group textarea:focus {
+            border-color: #e8491d;
+            box-shadow: 0 0 0 2px rgba(232, 73, 29, 0.2);
+            outline: none;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-group input[type="file"] {
+            padding: 10px 0;
+        }
+
+        .form-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Style for file input to match theme */
+        input[type="file"] {
+            position: relative;
+            max-width: 100%;
+        }
+
+        input[type="file"]::file-selector-button {
+            background-color: #e8491d;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            border: 2px solid #e8491d;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-right: 15px;
+        }
+
+        input[type="file"]::file-selector-button:hover {
+            background-color: #d9a979;
+            border-color: #d9a979;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Note: Submit button already uses the cta-button class which has styling defined */
+
+        .recipe-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
+        }
+
+        .recipe-card-icon {
+            background-color: #e8491d;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe-card-body {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 0 0 8px 8px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .recipe-upload-form {
+                padding: 15px;
+            }
+
+            .form-group input[type="text"],
+            .form-group input[type="email"],
+            .form-group textarea {
+                padding: 10px;
+            }
+        }
+    </style>
+</body>
+</html>

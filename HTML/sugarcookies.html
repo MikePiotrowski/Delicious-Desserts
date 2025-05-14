@@ -8,6 +8,7 @@
     <title>Homemade Sugar Cookies - Delicious Desserts</title>
     <link rel="stylesheet" href="../CSS/enhanced-style.css">
     <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../JS/newFile.js" defer></script>
     <script src="../JS/site-enhancements.js" defer></script>
@@ -15,15 +16,27 @@
 <body>
     <header>
         <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html#cookies">Cookies</a></li>
+                    <li><a href="index.html#brownies">Brownies</a></li>
+                    <li><a href="index.html#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
             <div id="branding">
                 <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
-                        <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
-                        <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
-                    </ul>
-                </nav>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -47,63 +60,82 @@
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Ingredients</h2>
-            <ul class="ingredients-main">
-                <li>All-Purpose Flour – measured and then sifted into a bowl</li>
-                <li>Baking Powder – the main raising ingredient</li>
-                <li>Fine Sea Salt – or table salt</li>
-                <li>Granulated Sugar – for both the cookie dough and extra for rolling the dough balls in</li>
-                <li>Large Eggs</li>
-                <li>Pure Vanilla Extract – for depth of flavor</li>
-                <li>Unsalted Butter – softened to room temperature</li>
-            </ul>
-        </section>
-
-        <section class="content-section">
-            <h2>Instructions</h2>
-
-            <div class="step">
-                <h3>Step 1</h3>
-                <p>Preheat the oven to 375 degrees F. Line several baking sheets with parchment paper (or a silicone mat). Mix the flour, baking powder, and salt in a medium bowl.</p>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Ingredients</h2>
+                <div class="recipe-card-icon"><i class="fas fa-utensils"></i></div>
             </div>
-
-            <div class="step">
-                <h3>Step 2</h3>
-                <p>Place the softened butter and sugar in the large bowl of your electric mixer (stand mixer). Cream the butter and sugar together on high until light and fluffy, 3-5 minutes. (Don't skimp on the time here.) Then turn the mixer on low and add the eggs and vanilla extract. Scrape the bowl. With the mixer running on low, slowly add the flour mixture. Scrape the bowl and beat again for 30 seconds.</p>
-            </div>
-
-            <div class="step">
-                <h3>Step 3</h3>
-                <p>Pour some extra sugar into a bowl to coat the cookies. Scoop the sugar cookie dough out with a cookie scoop and roll into 1-inch balls. The dough should be soft and delicate – don't over-handle. Shake each ball in the sugar bowl to coat, then place them on the cookie sheets 2 inches apart. Use the bottom of a drinking glass to press down on each ball, until it's 1/3- to 1/2-inch thick.</p>
-            </div>
-
-            <div class="step">
-                <h3>Step 4</h3>
-                <p>Bake each sheet of sugar cookies for 9-11 minutes, until the edges are slightly golden and the centers are just barely set. Cool completely on the cookie sheets before decorating with the glaze.</p>
+            <div class="recipe-card-body">
+                <ul class="ingredients-main">
+                    <li>All-Purpose Flour – measured and then sifted into a bowl</li>
+                    <li>Baking Powder – the main raising ingredient</li>
+                    <li>Fine Sea Salt – or table salt</li>
+                    <li>Granulated Sugar – for both the cookie dough and extra for rolling the dough balls in</li>
+                    <li>Large Eggs</li>
+                    <li>Pure Vanilla Extract – for depth of flavor</li>
+                    <li>Unsalted Butter – softened to room temperature</li>
+                </ul>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Decorating Ideas</h2>
-            <p>These sugar cookies are delicious plain, but they also make a perfect canvas for decorating:</p>
-            <ul>
-                <li>Simple glaze made with powdered sugar and milk</li>
-                <li>Royal icing for detailed decorations</li>
-                <li>Colored sugar or sprinkles before baking</li>
-                <li>Sandwich two cookies with jam or frosting in between</li>
-                <li>Dip half the cookie in melted chocolate</li>
-            </ul>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Instructions</h2>
+                <div class="recipe-card-icon"><i class="fas fa-list-ol"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <div class="step">
+                    <h3>Step 1</h3>
+                    <p>Preheat the oven to 375 degrees F. Line several baking sheets with parchment paper (or a silicone mat). Mix the flour, baking powder, and salt in a medium bowl.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Step 2</h3>
+                    <p>Place the softened butter and sugar in the large bowl of your electric mixer (stand mixer). Cream the butter and sugar together on high until light and fluffy, 3-5 minutes. (Don't skimp on the time here.) Then turn the mixer on low and add the eggs and vanilla extract. Scrape the bowl. With the mixer running on low, slowly add the flour mixture. Scrape the bowl and beat again for 30 seconds.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Step 3</h3>
+                    <p>Pour some extra sugar into a bowl to coat the cookies. Scoop the sugar cookie dough out with a cookie scoop and roll into 1-inch balls. The dough should be soft and delicate – don't over-handle. Shake each ball in the sugar bowl to coat, then place them on the cookie sheets 2 inches apart. Use the bottom of a drinking glass to press down on each ball, until it's 1/3- to 1/2-inch thick.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Step 4</h3>
+                    <p>Bake each sheet of sugar cookies for 9-11 minutes, until the edges are slightly golden and the centers are just barely set. Cool completely on the cookie sheets before decorating with the glaze.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Storage Tips</h2>
-            <p>To keep your sugar cookies fresh and delicious:</p>
-            <ul>
-                <li>Store in an airtight container at room temperature for up to 1 week</li>
-                <li>Freeze undecorated cookies for up to 3 months</li>
-                <li>Freeze cookie dough balls for up to 3 months - bake directly from frozen, adding 1-2 minutes to the baking time</li>
-            </ul>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Decorating Ideas</h2>
+                <div class="recipe-card-icon"><i class="fas fa-paint-brush"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>These sugar cookies are delicious plain, but they also make a perfect canvas for decorating:</p>
+                <ul>
+                    <li>Simple glaze made with powdered sugar and milk</li>
+                    <li>Royal icing for detailed decorations</li>
+                    <li>Colored sugar or sprinkles before baking</li>
+                    <li>Sandwich two cookies with jam or frosting in between</li>
+                    <li>Dip half the cookie in melted chocolate</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Storage Tips</h2>
+                <div class="recipe-card-icon"><i class="fas fa-box"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>To keep your sugar cookies fresh and delicious:</p>
+                <ul>
+                    <li>Store in an airtight container at room temperature for up to 1 week</li>
+                    <li>Freeze undecorated cookies for up to 3 months</li>
+                    <li>Freeze cookie dough balls for up to 3 months - bake directly from frozen, adding 1-2 minutes to the baking time</li>
+                </ul>
+            </div>
         </section>
     </main>
 

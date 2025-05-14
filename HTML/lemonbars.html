@@ -6,24 +6,37 @@
     <meta name="description" content="Delicious Desserts - Lemon Bars Recipe (Coming Soon)">
     <meta name="author" content="Michael Piotrowski">
     <title>Lemon Bars - Delicious Desserts</title>
-    <link rel="stylesheet" href="CSS/enhanced-style.css">
-    <link rel="stylesheet" href="CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/enhanced-style.css">
+    <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="newFile.js" defer></script>
-    <script src="site-enhancements.js" defer></script>
+    <script src="../JS/newFile.js" defer></script>
+    <script src="../JS/site-enhancements.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html#cookies">Cookies</a></li>
+                    <li><a href="index.html#brownies">Brownies</a></li>
+                    <li><a href="index.html#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
             <div id="branding">
-                <div class="logo" id="siteLogo"><img src="Logo/DD.png" alt="Delicious Desserts Logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
-                        <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
-                        <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
-                    </ul>
-                </nav>
+                <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -51,47 +64,67 @@
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>What to Expect</h2>
-            <ul>
-                <li>Bright, tangy lemon flavor that's perfectly balanced with sweetness</li>
-                <li>Buttery, tender shortbread crust that complements the smooth filling</li>
-                <li>Beautiful contrast of textures between the crisp base and silky topping</li>
-                <li>Vibrant yellow color that makes for an eye-catching presentation</li>
-                <li>Refreshing alternative to chocolate and vanilla desserts</li>
-            </ul>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>What to Expect</h2>
+                <div class="recipe-card-icon"><i class="fas fa-lemon"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <ul>
+                    <li>Bright, tangy lemon flavor that's perfectly balanced with sweetness</li>
+                    <li>Buttery, tender shortbread crust that complements the smooth filling</li>
+                    <li>Beautiful contrast of textures between the crisp base and silky topping</li>
+                    <li>Vibrant yellow color that makes for an eye-catching presentation</li>
+                    <li>Refreshing alternative to chocolate and vanilla desserts</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Recipe Development</h2>
-            <p>Our culinary team is currently fine-tuning this classic lemon bar recipe to ensure it delivers the perfect balance of flavors and textures. We're working on:</p>
-            <ul>
-                <li>The ideal ratio of lemon juice to zest for the most vibrant flavor</li>
-                <li>Perfecting the shortbread base for the right amount of crispness</li>
-                <li>Achieving the perfect consistency for the lemon filling - not too firm, not too soft</li>
-                <li>Testing variations with Meyer lemons for a unique twist</li>
-            </ul>
-            <p>We're excited to share our perfected lemon bar recipe with you soon!</p>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Recipe Development</h2>
+                <div class="recipe-card-icon"><i class="fas fa-flask"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>Our culinary team is currently fine-tuning this classic lemon bar recipe to ensure it delivers the perfect balance of flavors and textures. We're working on:</p>
+                <ul>
+                    <li>The ideal ratio of lemon juice to zest for the most vibrant flavor</li>
+                    <li>Perfecting the shortbread base for the right amount of crispness</li>
+                    <li>Achieving the perfect consistency for the lemon filling - not too firm, not too soft</li>
+                    <li>Testing variations with Meyer lemons for a unique twist</li>
+                </ul>
+                <p>We're excited to share our perfected lemon bar recipe with you soon!</p>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Serving Suggestions</h2>
-            <p>When our Lemon Bars recipe is ready, we'll include these perfect serving ideas:</p>
-            <ul>
-                <li>Dusted with a generous layer of powdered sugar</li>
-                <li>Garnished with thin lemon slices or fresh berries</li>
-                <li>Paired with afternoon tea or coffee</li>
-                <li>Served chilled for a refreshing summer dessert</li>
-                <li>Cut into bite-sized squares for elegant entertaining</li>
-            </ul>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Serving Suggestions</h2>
+                <div class="recipe-card-icon"><i class="fas fa-utensils"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>When our Lemon Bars recipe is ready, we'll include these perfect serving ideas:</p>
+                <ul>
+                    <li>Dusted with a generous layer of powdered sugar</li>
+                    <li>Garnished with thin lemon slices or fresh berries</li>
+                    <li>Paired with afternoon tea or coffee</li>
+                    <li>Served chilled for a refreshing summer dessert</li>
+                    <li>Cut into bite-sized squares for elegant entertaining</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Stay Updated</h2>
-            <p>Want to be the first to know when this recipe is available?</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" class="newsletter-input">
-                <button class="cta-button">Notify Me</button>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Stay Updated</h2>
+                <div class="recipe-card-icon"><i class="fas fa-envelope"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>Want to be the first to know when this recipe is available?</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input">
+                    <button class="cta-button">Notify Me</button>
+                </div>
             </div>
         </section>
     </main>

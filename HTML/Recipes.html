@@ -8,6 +8,7 @@
     <title>Recipes - Delicious Desserts</title>
     <link rel="stylesheet" href="../CSS/enhanced-style.css">
     <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../JS/newFile.js" defer></script>
     <script src="../JS/site-enhancements.js" defer></script>
@@ -15,15 +16,27 @@
 <body>
     <header>
         <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#cookies">Cookies</a></li>
+                    <li><a href="#brownies">Brownies</a></li>
+                    <li><a href="#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
             <div id="branding">
                 <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
-                        <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
-                        <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
-                    </ul>
-                </nav>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -51,6 +64,15 @@
                     <p>Simple, sweet, and perfect for decorating. These sugar cookies are a blank canvas for your creativity!</p>
                 </div>
             </div>
+        </section>
+
+        <section class="content-section share-recipe-section">
+            <h2><i class="fas fa-share-alt"></i> Share Your Own Recipes</h2>
+            <p>Do you have a delicious dessert recipe that you'd love to share with our community? We welcome contributions from bakers of all skill levels!</p>
+            <div class="cta-container">
+                <a href="UploadRecipe.html" class="cta-button"><i class="fas fa-upload"></i> Upload Your Recipe</a>
+            </div>
+            <p class="small-text">Your recipe could be featured on our website and shared with dessert enthusiasts around the world!</p>
         </section>
 
         <section class="content-section">
@@ -99,6 +121,36 @@
     </footer>
 
     <style>
+        /* Share Recipe Section Styles */
+        .share-recipe-section {
+            background: linear-gradient(135deg, #f0a55a 0%, #d9a979 100%);
+            text-align: center;
+            border-left: 5px solid #e8491d;
+            padding: 30px;
+        }
+
+        .share-recipe-section h2 {
+            color: #624123;
+            margin-bottom: 15px;
+        }
+
+        .share-recipe-section p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 1.1rem;
+        }
+
+        .cta-container {
+            margin: 25px 0;
+        }
+
+        .small-text {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #624123;
+        }
+
+        /* Recipe List Styles */
         .recipe-list {
             display: flex;
             flex-wrap: wrap;

@@ -8,6 +8,7 @@
     <title>Grandma Ruth's Snickerdoodle Cookies - Delicious Desserts</title>
     <link rel="stylesheet" href="../CSS/enhanced-style.css">
     <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../JS/newFile.js" defer></script>
     <script src="../JS/site-enhancements.js" defer></script>
@@ -15,15 +16,27 @@
 <body>
     <header>
         <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html#cookies">Cookies</a></li>
+                    <li><a href="index.html#brownies">Brownies</a></li>
+                    <li><a href="index.html#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
             <div id="branding">
                 <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
-                        <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
-                        <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
-                    </ul>
-                </nav>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -47,74 +60,87 @@
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Ingredients</h2>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Ingredients</h2>
+                <div class="recipe-card-icon"><i class="fas fa-utensils"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <div class="ingredients-container">
+                    <div class="ingredients-list">
+                        <h3>Cookie Dough</h3>
+                        <ul>
+                            <li>1 ½ cups white sugar</li>
+                            <li>1 cup softened butter</li>
+                            <li>2 large eggs</li>
+                            <li>2 ¾ cups all-purpose flour</li>
+                            <li>2 teaspoons cream of tartar</li>
+                            <li>1 teaspoon baking soda</li>
+                            <li>¼ teaspoon salt</li>
+                        </ul>
+                    </div>
 
-            <div class="ingredients-container">
-                <div class="ingredients-list">
-                    <h3>Cookie Dough</h3>
-                    <ul>
-                        <li>1 ½ cups white sugar</li>
-                        <li>1 cup softened butter</li>
-                        <li>2 large eggs</li>
-                        <li>2 ¾ cups all-purpose flour</li>
-                        <li>2 teaspoons cream of tartar</li>
-                        <li>1 teaspoon baking soda</li>
-                        <li>¼ teaspoon salt</li>
-                    </ul>
-                </div>
-
-                <div class="ingredients-list">
-                    <h3>Coating</h3>
-                    <ul>
-                        <li>2 tablespoons white sugar</li>
-                        <li>2 teaspoons ground cinnamon</li>
-                    </ul>
+                    <div class="ingredients-list">
+                        <h3>Coating</h3>
+                        <ul>
+                            <li>2 tablespoons white sugar</li>
+                            <li>2 teaspoons ground cinnamon</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Directions</h2>
-
-            <div class="step">
-                <h3>Step 1</h3>
-                <p>Preheat the oven to 400&deg;F (200&deg;C). Line a baking sheet with parchment paper or lightly grease.</p>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Directions</h2>
+                <div class="recipe-card-icon"><i class="fas fa-list-ol"></i></div>
             </div>
+            <div class="recipe-card-body">
+                <div class="step">
+                    <h3>Step 1</h3>
+                    <p>Preheat the oven to 400&deg;F (200&deg;C). Line a baking sheet with parchment paper or lightly grease.</p>
+                </div>
 
-            <div class="step">
-                <h3>Step 2</h3>
-                <p>Make cookies: Beat together white sugar, butter, and eggs in a large bowl using an electric mixer until smooth and creamy. Combine flour, cream of tartar, baking soda, and salt in a separate bowl; stir into creamed butter mixture until dough holds together.</p>
-            </div>
+                <div class="step">
+                    <h3>Step 2</h3>
+                    <p>Make cookies: Beat together white sugar, butter, and eggs in a large bowl using an electric mixer until smooth and creamy. Combine flour, cream of tartar, baking soda, and salt in a separate bowl; stir into creamed butter mixture until dough holds together.</p>
+                </div>
 
-            <div class="step">
-                <h3>Step 3</h3>
-                <p>Mix together white sugar and cinnamon in a small bowl until well combined.</p>
-            </div>
+                <div class="step">
+                    <h3>Step 3</h3>
+                    <p>Mix together white sugar and cinnamon in a small bowl until well combined.</p>
+                </div>
 
-            <div class="step">
-                <h3>Step 4</h3>
-                <p>Form dough into balls (about 2 teaspoons in each ball), then roll in cinnamon-sugar coating. Place dough balls about 2 inches apart onto the prepared baking sheet.</p>
-            </div>
+                <div class="step">
+                    <h3>Step 4</h3>
+                    <p>Form dough into balls (about 2 teaspoons in each ball), then roll in cinnamon-sugar coating. Place dough balls about 2 inches apart onto the prepared baking sheet.</p>
+                </div>
 
-            <div class="step">
-                <h3>Step 5</h3>
-                <p>Bake in the preheated oven on the center rack for 7 minutes. Allow cookies to cool on the baking sheet for 5 minutes before transferring to a wire rack to cool completely.</p>
+                <div class="step">
+                    <h3>Step 5</h3>
+                    <p>Bake in the preheated oven on the center rack for 7 minutes. Allow cookies to cool on the baking sheet for 5 minutes before transferring to a wire rack to cool completely.</p>
+                </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Serving Suggestions</h2>
-            <p>These cookies are delicious on their own, but you can also try these serving ideas:</p>
-            <ul>
-                <li>Serve warm with a glass of cold milk</li>
-                <li>Make ice cream sandwiches with vanilla ice cream</li>
-                <li>Crumble over apple crisp for added texture</li>
-                <li>Package in decorative tins for holiday gifts</li>
-            </ul>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Serving Suggestions</h2>
+                <div class="recipe-card-icon"><i class="fas fa-utensils"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>These cookies are delicious on their own, but you can also try these serving ideas:</p>
+                <ul>
+                    <li>Serve warm with a glass of cold milk</li>
+                    <li>Make ice cream sandwiches with vanilla ice cream</li>
+                    <li>Crumble over apple crisp for added texture</li>
+                    <li>Package in decorative tins for holiday gifts</li>
+                </ul>
 
-            <div class="image">
-                <img src="../Images/snickerd2.jpg" alt="Finished snickerdoodle cookies" width="300" height="300">
+                <div class="image">
+                    <img src="../Images/snickerd2.jpg" alt="Finished snickerdoodle cookies" width="300" height="300">
+                </div>
             </div>
         </section>
     </main>

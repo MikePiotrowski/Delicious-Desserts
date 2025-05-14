@@ -8,6 +8,7 @@
     <title>Delicious Desserts - Homemade Dessert Recipes</title>
     <link rel="stylesheet" href="../CSS/enhanced-style.css">
     <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../JS/newFile.js" defer></script>
     <script src="../JS/site-enhancements.js" defer></script>
@@ -15,15 +16,27 @@
 <body>
     <header>
         <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#cookies">Cookies</a></li>
+                    <li><a href="#brownies">Brownies</a></li>
+                    <li><a href="#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
             <div id="branding">
                 <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
-                        <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
-                        <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
-                    </ul>
-                </nav>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -67,6 +80,65 @@
             </div>
         </section>
 
+        <!-- Cookies Section -->
+        <section id="cookies" class="content-section">
+            <h2>Cookie Recipes</h2>
+            <p>Discover our delicious collection of homemade cookie recipes</p>
+
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <img src="../Images/chocolate.jpg" alt="Chocolate Chip Cookies" class="recipe-thumbnail">
+                    <h3><a href="chocolatechip.html">Chocolate Chip Cookies</a></h3>
+                    <p>The classic cookie that everyone loves! Soft, chewy, and loaded with chocolate chips.</p>
+                    <a href="chocolatechip.html" class="recipe-link">View Recipe</a>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="../Images/snickerdoodle.jpg" alt="Snickerdoodle Cookies" class="recipe-thumbnail">
+                    <h3><a href="snickerdoodle.html">Grandma Ruth's Snickerdoodles</a></h3>
+                    <p>A traditional cinnamon-sugar coated cookie with a soft, chewy texture and wonderful aroma.</p>
+                    <a href="snickerdoodle.html" class="recipe-link">View Recipe</a>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="../Images/sugarcookies.jpg" alt="Sugar Cookies" class="recipe-thumbnail">
+                    <h3><a href="sugarcookies.html">Homemade Sugar Cookies</a></h3>
+                    <p>Simple, sweet, and perfect for decorating. These sugar cookies are a blank canvas for your creativity!</p>
+                    <a href="sugarcookies.html" class="recipe-link">View Recipe</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brownies Section -->
+        <section id="brownies" class="content-section">
+            <h2>Brownie Recipes</h2>
+            <p>Indulge in our rich and fudgy brownie recipes</p>
+
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <img src="../Images/Double-Chocolate-Almond-Cake-Brownies-3-2-1.jpg" alt="Double Chocolate Brownies" class="recipe-thumbnail">
+                    <h3><a href="chocolatebrownies.html">Classic Chocolate Brownies</a></h3>
+                    <p>Rich, fudgy brownies with a crackly top and gooey center. A chocolate lover's dream!</p>
+                    <a href="chocolatebrownies.html" class="recipe-link">View Recipe</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seasonal Section -->
+        <section id="seasonal" class="content-section">
+            <h2>Seasonal Recipes</h2>
+            <p>Enjoy our seasonal dessert recipes that celebrate the flavors of each time of year</p>
+
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <img src="../Images/sugarcookies.jpg" alt="Lemon Bars" class="recipe-thumbnail">
+                    <h3><a href="lemonbars.html">Spring Lemon Bars</a></h3>
+                    <p>Bright, tangy lemon bars with a buttery shortbread crust. Perfect for spring gatherings!</p>
+                    <a href="lemonbars.html" class="recipe-link">View Recipe</a>
+                </div>
+            </div>
+        </section>
+
         <!-- About Us Preview Section -->
         <section class="content-section about-preview">
             <div class="about-preview-content">
@@ -75,6 +147,16 @@
                 <p>Our mission is to elevate the joy of baking by bringing meticulously tested, foolproof dessert recipes to kitchens worldwide. We believe a thoughtfully crafted dessert transcends being merely a sweet treat—it's an edible work of art that creates meaningful connections.</p>
                 <a href="About.html" class="cta-button secondary">Learn More About Us</a>
             </div>
+        </section>
+
+        <!-- Share Recipe Section -->
+        <section class="content-section share-recipe-section">
+            <h2><i class="fas fa-share-alt"></i> Share Your Delicious Creations</h2>
+            <p>Have a dessert recipe that you're proud of? We'd love to feature it on our website!</p>
+            <div class="cta-container">
+                <a href="UploadRecipe.html" class="cta-button"><i class="fas fa-upload"></i> Upload Your Recipe</a>
+            </div>
+            <p class="small-text">Join our community of passionate bakers and share your culinary masterpieces with the world.</p>
         </section>
 
         <!-- Newsletter Section -->
@@ -103,6 +185,41 @@
     </footer>
 
     <style>
+        /* Share Recipe Section Styles */
+        .share-recipe-section {
+            background: linear-gradient(135deg, #624123 0%, #874c30 100%);
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .share-recipe-section h2 {
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .share-recipe-section p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .cta-container {
+            margin: 25px 0;
+        }
+
+        .small-text {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #f0a55a;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+
         /* Additional styles for the home page */
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Images/Cookies_Bites.jpg');

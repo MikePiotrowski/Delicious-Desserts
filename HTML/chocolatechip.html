@@ -6,24 +6,37 @@
     <meta name="description" content="Delicious Desserts - Chocolate Chip Cookies Recipe">
     <meta name="author" content="Michael Piotrowski">
     <title>Chocolate Chip Cookies - Delicious Desserts</title>
-    <link rel="stylesheet" href="CSS/enhanced-style.css">
-    <link rel="stylesheet" href="CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/enhanced-style.css">
+    <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="JS/newFile.js" defer></script>
-    <script src="JS/site-enhancements.js" defer></script>
+    <script src="../JS/newFile.js" defer></script>
+    <script src="../JS/site-enhancements.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html#cookies">Cookies</a></li>
+                    <li><a href="index.html#brownies">Brownies</a></li>
+                    <li><a href="index.html#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
             <div id="branding">
-                <div class="logo" id="siteLogo"><img src="Logo/DD.png" alt="Delicious Desserts Logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="HTML/index.html"><span class="highlight-hover">Home</span></a></li>
-                        <li><a href="HTML/Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
-                        <li><a href="HTML/About.html"><span class="highlight-hover">About Us</span></a></li>
-                    </ul>
-                </nav>
+                <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -37,56 +50,72 @@
 
         <section class="recipe-info">
             <div class="recipe-image">
-                <img src="Images/chocolate.jpg" alt="Chocolate chip cookies" width="300" height="300">
+                <img src="../Images/chocolate.jpg" alt="Chocolate chip cookies" width="300" height="300">
             </div>
 
             <div class="recipe-details">
-                <h2>Ingredients</h2>
+                <div class="recipe-card">
+                    <div class="recipe-card-header">
+                        <h2>Ingredients</h2>
+                        <div class="recipe-card-icon"><i class="fas fa-utensils"></i></div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <ul>
+                            <li>2 1/4 cups all-purpose flour</li>
+                            <li>1 teaspoon baking soda</li>
+                            <li>1 teaspoon salt</li>
+                            <li>1 cup (2 sticks) butter, softened</li>
+                            <li>3/4 cup granulated sugar</li>
+                            <li>3/4 cup packed brown sugar</li>
+                            <li>1 teaspoon vanilla extract</li>
+                            <li>2 large eggs</li>
+                            <li>2 cups (12-ounce package) <a href="https://www.target.com/p/nestle-toll-house-semi-sweet-chocolate-chips-12oz/-/A-13055860?region_id=957957&ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000108264724&CPNG=PLA_Bakery%2BDeli%7CBakery%2BDeli_Ecomm_Food_Bev&adgroup=SC_Bakery%2BDeli&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=9032516&targetid=aud-1964379778526:pla-382918945429&gclid=CjwKCAjwivemBhBhEiwAJxNWN_dijCpr4za7W_6yCwvN1ES-tL8wVcm0hTlob9acWRxaJ06H7V0eXhoC2XgQAvD_BwE&gclsrc=aw.ds">NESTLE<span class="trademark">&reg;</span> TOLL HOUSE Semi-Sweet Chocolate Morsels</a></li>
+                            <li>1 cup chopped nuts (Optional. If omitting, add 1 to 2 Tbsp. of all-purpose flour.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Directions</h2>
+                <div class="recipe-card-icon"><i class="fas fa-list-ol"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <div class="step">
+                    <h3>Step One</h3>
+                    <p>Preheat oven to 375&deg; F. (190.56&deg;C).</p>
+                </div>
+
+                <div class="step">
+                    <h3>Step Two</h3>
+                    <p>Combine flour, baking soda and salt in small bowl. Beat butter, granulated sugar, brown sugar
+                    and vanilla extract in large mixer bowl until creamy. Add eggs, one at a time, beating well
+                    after each addition. Gradually beat in flour mixture. Stir in morsels and nuts. Drop by rounded
+                    tablespoon onto ungreased baking sheets.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Step Three</h3>
+                    <p>Bake for 9 to 11 minutes or until golden brown. Cool on baking sheets for 2 minutes; remove to wire racks to cool completely.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Tips for Perfect Cookies</h2>
+                <div class="recipe-card-icon"><i class="fas fa-lightbulb"></i></div>
+            </div>
+            <div class="recipe-card-body">
                 <ul>
-                    <li>2 1/4 cups all-purpose flour</li>
-                    <li>1 teaspoon baking soda</li>
-                    <li>1 teaspoon salt</li>
-                    <li>1 cup (2 sticks) butter, softened</li>
-                    <li>3/4 cup granulated sugar</li>
-                    <li>3/4 cup packed brown sugar</li>
-                    <li>1 teaspoon vanilla extract</li>
-                    <li>2 large eggs</li>
-                    <li>2 cups (12-ounce package) <a href="https://www.target.com/p/nestle-toll-house-semi-sweet-chocolate-chips-12oz/-/A-13055860?region_id=957957&ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000108264724&CPNG=PLA_Bakery%2BDeli%7CBakery%2BDeli_Ecomm_Food_Bev&adgroup=SC_Bakery%2BDeli&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=9032516&targetid=aud-1964379778526:pla-382918945429&gclid=CjwKCAjwivemBhBhEiwAJxNWN_dijCpr4za7W_6yCwvN1ES-tL8wVcm0hTlob9acWRxaJ06H7V0eXhoC2XgQAvD_BwE&gclsrc=aw.ds">NESTLE<span class="trademark">&reg;</span> TOLL HOUSE Semi-Sweet Chocolate Morsels</a></li>
-                    <li>1 cup chopped nuts (Optional. If omitting, add 1 to 2 Tbsp. of all-purpose flour.)</li>
+                    <li>Make sure your butter is at room temperature for easy creaming</li>
+                    <li>Don't overmix the dough after adding the flour to avoid tough cookies</li>
+                    <li>For chewier cookies, use more brown sugar than white sugar</li>
+                    <li>Chill the dough for at least 30 minutes before baking for thicker cookies</li>
                 </ul>
             </div>
-        </section>
-
-        <section class="content-section">
-            <h2>Directions</h2>
-
-            <div class="step">
-                <h3>Step One</h3>
-                <p>Preheat oven to 375&deg; F. (190.56&deg;C).</p>
-            </div>
-
-            <div class="step">
-                <h3>Step Two</h3>
-                <p>Combine flour, baking soda and salt in small bowl. Beat butter, granulated sugar, brown sugar
-                and vanilla extract in large mixer bowl until creamy. Add eggs, one at a time, beating well
-                after each addition. Gradually beat in flour mixture. Stir in morsels and nuts. Drop by rounded
-                tablespoon onto ungreased baking sheets.</p>
-            </div>
-
-            <div class="step">
-                <h3>Step Three</h3>
-                <p>Bake for 9 to 11 minutes or until golden brown. Cool on baking sheets for 2 minutes; remove to wire racks to cool completely.</p>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2>Tips for Perfect Cookies</h2>
-            <ul>
-                <li>Make sure your butter is at room temperature for easy creaming</li>
-                <li>Don't overmix the dough after adding the flour to avoid tough cookies</li>
-                <li>For chewier cookies, use more brown sugar than white sugar</li>
-                <li>Chill the dough for at least 30 minutes before baking for thicker cookies</li>
-            </ul>
         </section>
     </main>
 

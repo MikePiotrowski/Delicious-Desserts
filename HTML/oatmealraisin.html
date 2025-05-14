@@ -6,24 +6,37 @@
     <meta name="description" content="Delicious Desserts - Oatmeal Raisin Cookies Recipe (Coming Soon)">
     <meta name="author" content="Michael Piotrowski">
     <title>Oatmeal Raisin Cookies - Delicious Desserts</title>
-    <link rel="stylesheet" href="CSS/enhanced-style.css">
-    <link rel="stylesheet" href="CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/enhanced-style.css">
+    <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="newFile.js" defer></script>
-    <script src="site-enhancements.js" defer></script>
+    <script src="../JS/newFile.js" defer></script>
+    <script src="../JS/site-enhancements.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html#cookies">Cookies</a></li>
+                    <li><a href="index.html#brownies">Brownies</a></li>
+                    <li><a href="index.html#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
             <div id="branding">
-                <div class="logo" id="siteLogo"><img src="Logo/DD.png" alt="Delicious Desserts Logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
-                        <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
-                        <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
-                    </ul>
-                </nav>
+                <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -51,35 +64,50 @@
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>What to Expect</h2>
-            <ul>
-                <li>Perfectly chewy texture with hearty rolled oats</li>
-                <li>Sweet, plump raisins in every bite</li>
-                <li>Warm cinnamon and nutmeg spices</li>
-                <li>Wholesome ingredients for a more nutritious cookie</li>
-                <li>Versatile recipe that can be customized with nuts or other dried fruits</li>
-            </ul>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>What to Expect</h2>
+                <div class="recipe-card-icon"><i class="fas fa-cookie-bite"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <ul>
+                    <li>Perfectly chewy texture with hearty rolled oats</li>
+                    <li>Sweet, plump raisins in every bite</li>
+                    <li>Warm cinnamon and nutmeg spices</li>
+                    <li>Wholesome ingredients for a more nutritious cookie</li>
+                    <li>Versatile recipe that can be customized with nuts or other dried fruits</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Recipe Development</h2>
-            <p>Our bakers are currently fine-tuning this classic recipe to ensure it delivers the perfect balance of flavors and textures. We're working on:</p>
-            <ul>
-                <li>The ideal ratio of oats to flour for the best texture</li>
-                <li>Methods for plumping the raisins for maximum juiciness</li>
-                <li>The perfect spice blend to complement the oats and raisins</li>
-                <li>Optional add-ins like walnuts, pecans, or a hint of orange zest</li>
-            </ul>
-            <p>Stay tuned for our perfected recipe coming to you soon!</p>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Recipe Development</h2>
+                <div class="recipe-card-icon"><i class="fas fa-flask"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>Our bakers are currently fine-tuning this classic recipe to ensure it delivers the perfect balance of flavors and textures. We're working on:</p>
+                <ul>
+                    <li>The ideal ratio of oats to flour for the best texture</li>
+                    <li>Methods for plumping the raisins for maximum juiciness</li>
+                    <li>The perfect spice blend to complement the oats and raisins</li>
+                    <li>Optional add-ins like walnuts, pecans, or a hint of orange zest</li>
+                </ul>
+                <p>Stay tuned for our perfected recipe coming to you soon!</p>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Stay Updated</h2>
-            <p>Want to be the first to know when this recipe is available?</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" class="newsletter-input">
-                <button class="cta-button">Notify Me</button>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Stay Updated</h2>
+                <div class="recipe-card-icon"><i class="fas fa-envelope"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>Want to be the first to know when this recipe is available?</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input">
+                    <button class="cta-button">Notify Me</button>
+                </div>
             </div>
         </section>
     </main>

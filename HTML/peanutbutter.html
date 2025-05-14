@@ -6,24 +6,37 @@
     <meta name="description" content="Delicious Desserts - Peanut Butter Cookies Recipe (Coming Soon)">
     <meta name="author" content="Michael Piotrowski">
     <title>Peanut Butter Cookies - Delicious Desserts</title>
-    <link rel="stylesheet" href="CSS/enhanced-style.css">
-    <link rel="stylesheet" href="CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/enhanced-style.css">
+    <link rel="stylesheet" href="../CSS/site-enhancements.css">
+    <link rel="stylesheet" href="../CSS/compact-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="newFile.js" defer></script>
-    <script src="site-enhancements.js" defer></script>
+    <script src="../JS/newFile.js" defer></script>
+    <script src="../JS/site-enhancements.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html#cookies">Cookies</a></li>
+                    <li><a href="index.html#brownies">Brownies</a></li>
+                    <li><a href="index.html#seasonal">Seasonal</a></li>
+                </ul>
+            </div>
             <div id="branding">
-                <div class="logo" id="siteLogo"><img src="Logo/DD.png" alt="Delicious Desserts Logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
-                        <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
-                        <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
-                    </ul>
-                </nav>
+                <div class="logo" id="siteLogo"><img src="../Logo/DD.png" alt="Delicious Desserts Logo"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="highlight-hover">Home</span></a></li>
+                    <li><a href="Recipes.html"><span class="highlight-hover">Recipes</span></a></li>
+                    <li><a href="About.html"><span class="highlight-hover">About Us</span></a></li>
+                    <li><a href="UploadRecipe.html"><span class="highlight-hover">Upload Recipe</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -51,35 +64,50 @@
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>What to Expect</h2>
-            <ul>
-                <li>Rich peanut butter flavor in every bite</li>
-                <li>Perfect balance of sweet and salty</li>
-                <li>Soft and chewy texture with classic criss-cross pattern</li>
-                <li>Simple ingredients you likely already have in your pantry</li>
-                <li>Easy to make - great for baking with kids!</li>
-            </ul>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>What to Expect</h2>
+                <div class="recipe-card-icon"><i class="fas fa-cookie-bite"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <ul>
+                    <li>Rich peanut butter flavor in every bite</li>
+                    <li>Perfect balance of sweet and salty</li>
+                    <li>Soft and chewy texture with classic criss-cross pattern</li>
+                    <li>Simple ingredients you likely already have in your pantry</li>
+                    <li>Easy to make - great for baking with kids!</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Recipe Development</h2>
-            <p>Our culinary team is currently testing different variations of this recipe to ensure it's absolutely perfect before sharing it with you. We're experimenting with:</p>
-            <ul>
-                <li>Different ratios of creamy vs. crunchy peanut butter</li>
-                <li>Various sweeteners to complement the peanut flavor</li>
-                <li>Optional mix-ins like chocolate chips or peanut pieces</li>
-                <li>Baking techniques for the perfect texture</li>
-            </ul>
-            <p>We can't wait to share the final recipe with you soon!</p>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Recipe Development</h2>
+                <div class="recipe-card-icon"><i class="fas fa-flask"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>Our culinary team is currently testing different variations of this recipe to ensure it's absolutely perfect before sharing it with you. We're experimenting with:</p>
+                <ul>
+                    <li>Different ratios of creamy vs. crunchy peanut butter</li>
+                    <li>Various sweeteners to complement the peanut flavor</li>
+                    <li>Optional mix-ins like chocolate chips or peanut pieces</li>
+                    <li>Baking techniques for the perfect texture</li>
+                </ul>
+                <p>We can't wait to share the final recipe with you soon!</p>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Stay Updated</h2>
-            <p>Want to be the first to know when this recipe is available?</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" class="newsletter-input">
-                <button class="cta-button">Notify Me</button>
+        <section class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Stay Updated</h2>
+                <div class="recipe-card-icon"><i class="fas fa-envelope"></i></div>
+            </div>
+            <div class="recipe-card-body">
+                <p>Want to be the first to know when this recipe is available?</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input">
+                    <button class="cta-button">Notify Me</button>
+                </div>
             </div>
         </section>
     </main>
