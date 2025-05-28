@@ -54,8 +54,11 @@ function initNewsletterForm() {
 
 // Helper function to show form messages
 function showFormMessage(form, message, type) {
+    // Check if there's a dedicated message container
+    const messageContainer = form.querySelector('.newsletter-message') || form;
+
     // Remove any existing message
-    const existingMessage = form.querySelector('.form-message');
+    const existingMessage = messageContainer.querySelector('.form-message');
     if (existingMessage) {
         existingMessage.remove();
     }
@@ -64,7 +67,7 @@ function showFormMessage(form, message, type) {
     const messageElement = document.createElement('p');
     messageElement.className = `form-message ${type}`;
     messageElement.textContent = message;
-    form.appendChild(messageElement);
+    messageContainer.appendChild(messageElement);
 
     // Auto-remove message after 5 seconds
     setTimeout(() => {
